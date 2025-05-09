@@ -8,3 +8,18 @@
 	email = 1fois2fois3fois@gmail.com
 [color]
 	ui = true
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+
+[color "branch"]
+    current = green
+    local = yellow
+    remote = cyan
+
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old = red
+    new = green
