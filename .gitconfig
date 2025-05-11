@@ -23,3 +23,5 @@
     frag = magenta
     old = red
     new = green
+[core]
+	excludesfile = /Users/bradley/.gitignore

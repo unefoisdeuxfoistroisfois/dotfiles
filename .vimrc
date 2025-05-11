@@ -5,7 +5,7 @@ let g:mail42 = 'britela-@student.s19.be'
 " --- APPARENCE ---
 syntax on
 "colorscheme elflord
-"colorscheme sorbet 
+colorscheme sorbet 
 "colorscheme zaibatsu
 "colorscheme default
 "colorscheme murphy

@@ -1,0 +1,12 @@
+.DS_Store
+
+# --- VIM ---
+*.swp
+*.swo
+
+# --- C ---
+a.out
+*.o
+
+# --- JAVA ---
+*.class
