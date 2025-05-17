@@ -1,2 +1,11 @@
+# SQL
 *.sql linguist-language=SQL
 *.sql linguist-detectable=true
+
+# HTML
+*.html linguist-language=HTML
+*.html linguist-detectable=true
+
+# CSS
+*.css linguist-language=CSS
+*.css linguist-detectable=true
