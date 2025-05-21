@@ -16,7 +16,7 @@ set cursorline	" Surbillance sur la ligne du curseur
 set colorcolumn=80 " Colonne pour limiter la frappe a 80
 set showcmd	" Voir les commandes qu'on tape (bas droite)
 set list
-set list listchars=tab:\\u2591\\u2591
+set list listchars=tab:\\u2591\\u2591 
 
 
 " --- RECHERCHE ---
