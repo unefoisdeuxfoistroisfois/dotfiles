@@ -20,9 +20,6 @@ endif
 set autoindent	" Va identer la prochaine ligne comme la precedente
 set smartindent	" indente intelgenite pour les {}
 
-set showmatch	" Va mettre un la prenthese ( parecedente apres avoir taper )
-set matchtime=10	"temps de clignotememnt 1 seconde
-
 set number
 set relativenumber
 
@@ -31,6 +28,7 @@ set showcmd	" Voir les commandes qu'on tape (bas droite)
 set cursorline	" Surbillance sur la ligne du curseur
 
 set textwidth=80
+set formatoptions+=t   " Active le retour à la ligne automatique à textwidth
 set colorcolumn=80 " Colonne pour limiter la frappe a 80
 
 set list
