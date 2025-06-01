@@ -5,12 +5,12 @@ let g:mail42 = 'britela-@student.s19.be'
 " --- APPARENCE ---
 syntax on
 "colorscheme elflord
-"colorscheme sorbet
+colorscheme sorbet
 "colorscheme zaibatsu
 "colorscheme default
 "colorscheme murphy
 "colorscheme shades_of_purple
-colorscheme koehler
+"colorscheme koehler
 
 "Ubuntu ne possede pas de couleur 24 bits
 if has("termguicolors") && has("unix") && !has("macunix")
@@ -36,6 +36,8 @@ set list listchars=tab:\\u2591\\u2591
 
 set showmatch	"apres avoir taper ) il va clingté au ( qui precede
 set matchtime=10	"temps de clignotememnt (1 seconde)
+
+set visualbell "suppresion des bruit a la fin des fichier (wsl)
 
 " --- RECHERCHE ---
 set hlsearch	" Surbrillance sur le mot trouvé
