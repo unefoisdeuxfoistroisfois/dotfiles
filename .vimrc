@@ -69,5 +69,13 @@ set noswapfile "Supprime les fichier .swp
 vnoremap <leader>c :s/^/\/\//<CR>:nohlsearch<CR>
 vnoremap <leader>u :s/^\/\/<CR>:nohlsearch<CR>
 
+" --- TABULATION ---
+" > -> va vers la droite
+" < -> va vers la gauche
+" gv garde la seleciton apres un premiere tabulation
+" S-Tab shift + tab 
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
 " --- SAUVEGARDE AUTO ---
 set autowriteall
