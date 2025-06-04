@@ -77,5 +77,26 @@ vnoremap <leader>u :s/^\/\/<CR>:nohlsearch<CR>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
+" --- DESACTIVATION DES FLECHE ---
+
+" MODE NORMAL
+nnoremap <Up>    :echo "MAIS MDR UTILISE k TINTIN VA"<CR>
+nnoremap <Down>  :echo "MAIS MDR UTILISE j TINTIN VA"<CR>
+nnoremap <Left>  :echo "MAIS MDR UTILISE h TINTIN VA"<CR>
+nnoremap <Right> :echo "MAIS MDR UTILISE l TINTIN VA"<CR>
+
+" MODE INSERTION esc car en mode insertion vim ne peut pas faire de echo
+" ensuite i pour revenir en mode INSERTION
+inoremap <Up>    <Esc>:echo "MAIS MDR UTILISE k TINTIN VA"<CR>i
+inoremap <Down>  <Esc>:echo "MAIS MDR UTILISE j TINTIN VA"<CR>i
+inoremap <Left>  <Esc>:echo "MAIS MDR UTILISE h TINTIN VA"<CR>i
+inoremap <Right> <Esc>:echo "MAIS MDR UTILISE l TINTIN VA"<CR>i
+
+" MODE VISUEL
+vnoremap <Up>    :<C-u>echo "MAIS MDR UTILISE k TINTIN VA"<CR>
+vnoremap <Down>  :<C-u>echo "MAIS MDR UTILISE j TINTIN VA"<CR>
+vnoremap <Left>  :<C-u>echo "MAIS MDR UTILISE h TINTIN VA"<CR>
+vnoremap <Right> :<C-u>echo "MAIS MDR UTILISE l TINTIN VA"<CR>
+
 " --- SAUVEGARDE AUTO ---
 set autowriteall
