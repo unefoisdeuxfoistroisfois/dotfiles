@@ -6,11 +6,11 @@ let g:mail42 = 'britela-@student.s19.be'
 syntax on
 "colorscheme elflord
 "colorscheme sorbet
-colorscheme zaibatsu
+"colorscheme zaibatsu
 "colorscheme default
 "colorscheme murphy
 "colorscheme shades_of_purple
-"colorscheme koehler
+colorscheme koehler
 "colorscheme industry
 
 " Ubuntu ne possede pas de couleur 24 bits
@@ -100,3 +100,11 @@ vnoremap <Right> :<C-u>echo "MAIS MDR UTILISE l TINTIN VA"<CR>
 
 " --- SAUVEGARDE AUTO ---
 set autowriteall
+
+" --- NETRW --- 
+autocmd VimEnter * :Vexplore	" Automatisation pour l'ouvrir a l'ouverture
+
+let g:netrw_winsize = 15	" Taille a 15 colonne (:15 Le)
+let g:netrw_banner = 0		" Suppresion de la baniere au dessus
+let g:netrw_liststyle = 3	" Aborescence style 3 + facile pour moi (i)
+let g:netrw_browse_split = 4	" Affiche fichier dans ecran principal
