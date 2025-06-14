@@ -102,7 +102,9 @@ vnoremap <Right> :<C-u>echo "MAIS MDR UTILISE l TINTIN VA"<CR>
 set autowriteall
 
 " --- NETRW --- 
-autocmd VimEnter * :Vexplore	" Automatisation pour l'ouvrir a l'ouverture
+"autocmd VimEnter * :Vexplore	" Automatisation pour l'ouvrir a l'ouverture
+" Ouvre Netrw seulement si aucun fichier n’est passé à Vim
+autocmd VimEnter * if argc() == 0 | :Vexplore | endif
 
 let g:netrw_winsize = 15	" Taille a 15 colonne (:15 Le)
 let g:netrw_banner = 0		" Suppresion de la baniere au dessus
