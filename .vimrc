@@ -5,12 +5,12 @@ let g:mail42 = 'britela-@student.s19.be'
 " --- APPARENCE ---
 syntax on
 "colorscheme elflord
-"colorscheme sorbet
+colorscheme sorbet
 "colorscheme zaibatsu
 "colorscheme default
 "colorscheme murphy
 "colorscheme shades_of_purple
-colorscheme koehler
+"colorscheme koehler
 "colorscheme industry
 
 " Ubuntu ne possede pas de couleur 24 bits
@@ -32,8 +32,8 @@ set textwidth=80
 set formatoptions+=t	" Active le retour à la ligne automatique à textwidth
 set colorcolumn=80	" Colonne pour limiter la frappe a 80
 
-set list
-set list listchars=tab:\\u2591\\u2591 
+"set list
+"set list listchars=tab:\\u2591\\u2591 
 
 set showmatch	" Apres avoir taper ) il va clingté à la ( qui précède
 set matchtime=10	" Temps de clignotememnt (1 seconde)
@@ -54,7 +54,7 @@ set mouse=a	" a pour all
 " si -clipboard alors sudo apt install vim-gtk3 ou parfois vim-nox
 if has('unnamedplus')
     set clipboard=unnamedplus	" Linux Ubuntu"
-elseif has('clipboard')	" vim ne connasi pas unnamed il connais juste clibpard
+elseif has('clipboard')	" vim ne connasi pas unnamed il connais juste clipboard
     set clipboard=unnamed	" MacOs"
 endif
 
@@ -80,23 +80,23 @@ vnoremap <S-Tab> <gv
 " --- DESACTIVATION DES FLECHE ---
 
 " MODE NORMAL
-nnoremap <Up>    :echo "MAIS MDR UTILISE k TINTIN VA"<CR>
-nnoremap <Down>  :echo "MAIS MDR UTILISE j TINTIN VA"<CR>
-nnoremap <Left>  :echo "MAIS MDR UTILISE h TINTIN VA"<CR>
-nnoremap <Right> :echo "MAIS MDR UTILISE l TINTIN VA"<CR>
+nnoremap <Up>    :echo "UTILISE k"<CR>
+nnoremap <Down>  :echo "UTILISE j"<CR>
+nnoremap <Left>  :echo "UTILISE h"<CR>
+nnoremap <Right> :echo "UTILISE l"<CR>
 
 " MODE INSERTION esc car en mode insertion vim ne peut pas faire de echo
 " ensuite i pour revenir en mode INSERTION
-inoremap <Up>    <Esc>:echo "MAIS MDR UTILISE k TINTIN VA"<CR>i
-inoremap <Down>  <Esc>:echo "MAIS MDR UTILISE j TINTIN VA"<CR>i
-inoremap <Left>  <Esc>:echo "MAIS MDR UTILISE h TINTIN VA"<CR>i
-inoremap <Right> <Esc>:echo "MAIS MDR UTILISE l TINTIN VA"<CR>i
+inoremap <Up>    <Esc>:echo "UTILISE k"<CR>i
+inoremap <Down>  <Esc>:echo "UTILISE j"<CR>i
+inoremap <Left>  <Esc>:echo "UTILISE h"<CR>i
+inoremap <Right> <Esc>:echo "UTILISE l"<CR>i
 
 " MODE VISUEL
-vnoremap <Up>    :<C-u>echo "MAIS MDR UTILISE k TINTIN VA"<CR>
-vnoremap <Down>  :<C-u>echo "MAIS MDR UTILISE j TINTIN VA"<CR>
-vnoremap <Left>  :<C-u>echo "MAIS MDR UTILISE h TINTIN VA"<CR>
-vnoremap <Right> :<C-u>echo "MAIS MDR UTILISE l TINTIN VA"<CR>
+vnoremap <Up>    :<C-u>echo "UTILISE k"<CR>
+vnoremap <Down>  :<C-u>echo "UTILISE j"<CR>
+vnoremap <Left>  :<C-u>echo "UTILISE h"<CR>
+vnoremap <Right> :<C-u>echo "UTILISE l"<CR>
 
 " --- SAUVEGARDE AUTO ---
 set autowriteall
