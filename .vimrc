@@ -54,7 +54,7 @@ set mouse=a	" a pour all
 " si -clipboard alors sudo apt install vim-gtk3 ou parfois vim-nox
 if has('unnamedplus')
     set clipboard=unnamedplus	" Linux Ubuntu"
-elseif has('clipboard')	" vim ne connasi pas unnamed il connais juste clipboard
+elseif has('clipboard')	" vim ne connait pas unnamed il connait juste clipboard
     set clipboard=unnamed	" MacOs"
 endif
 
