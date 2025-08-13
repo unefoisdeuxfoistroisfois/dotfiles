@@ -24,4 +24,4 @@
     old = red
     new = green
 [core]
-	excludesfile = /home/bradley/.gitignore
+	excludesfile = /home/britela-/.gitignore
