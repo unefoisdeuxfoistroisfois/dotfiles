@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/bradley'
 let g:netrw_dirhist_9='/home/britela-/Documents/Tronc commun/2/fract-ol'
 let g:netrw_dirhist_8='/home/britela-/Documents/Tronc commun/2/fract-ol/minilibx-linux/man/man1'
 let g:netrw_dirhist_7='/home/britela-/Documents/Tronc commun/2/fract-ol'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_4='/home/britela-/Documents/Tronc commun/2/fract-ol/minilibx
 let g:netrw_dirhist_3='/home/britela-/Documents/Tronc commun/2/fract-ol/minilibx-linux/man'
 let g:netrw_dirhist_2='/home/britela-/Documents/Tronc commun/2/fract-ol/minilibx-linux'
 let g:netrw_dirhist_1='/home/britela-/Documents/Tronc commun/2/fract-ol'
-let g:netrw_dirhist_0='/home/britela-/Documents/Tronc commun/2/fract-ol/minilibx-linux/.git'
