@@ -35,6 +35,7 @@ ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/.gitignore ~/.gitignore
 ln -s ~/dotfiles/.gitattributes ~/.gitattributes
 ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.vim ~/.vim
 
 # Activer le .gitignore global
 git config --global core.excludesfile ~/.gitignore
