@@ -13,13 +13,14 @@ Ce dépôt contient tous mes fichiers de config pour Git, Vim, etc. afin de gard
 | `.gitignore`      | Fichiers à ignorer dans tous les projets Git |
 | `.gitattributes`  | Règles de détection de langage et comportement GitHub |
 | `.vimrc`          | Configuration Vim (indentation, raccourcis, apparence) |
+| `.vim/`           | Répertoire Vim (plugins, thèmes, scripts, configs additionnelles) |
 
 ---
 
 ## 🚀 Installation rapide
 
-> ℹ️ Tous les fichiers de config sont stockés dans `~/dotfiles`.  
-> On crée ensuite des **liens symboliques** vers ces fichiers pour les rendre actifs dans le système,  
+> ℹ️ Les dotfiles sont stockés dans `~/dotfiles`.
+> > On crée ensuite des **liens symboliques** vers ces fichiers pour les rendre actifs dans le système,  
 > sans avoir à les copier ni dupliquer.  
 > Il est recommandé d’utiliser des **chemins relatifs** pour garder l’installation portable.
 
