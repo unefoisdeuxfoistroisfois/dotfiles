@@ -32,11 +32,18 @@ git clone https://github.com/unefoisdeuxfoistroisfois/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
 # Créer les liens symboliques vers le home (~), avec chemins relatifs
+
+#### 🔹 Méthode simple (pas à pas)
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore ~/.gitignore
 ln -sf ~/dotfiles/.gitattributes ~/.gitattributes
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.vim ~/.vim
+
+#### 🔹 Méthode rapide (tout d’un coup)
+for file in .gitconfig .gitignore .gitattributes .vimrc .vim; do
+    ln -sf ~/dotfiles/$file ~/$file
+done
 
 # Activer le .gitignore global
 git config --global core.excludesfile ~/.gitignore
