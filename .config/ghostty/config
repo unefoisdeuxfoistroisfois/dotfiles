@@ -1,0 +1,4 @@
+ # background = #f56ce3
+ # foreground = #000000
+
+custom-shader = shaders/cursor_smear.glsl

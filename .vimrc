@@ -14,9 +14,9 @@ colorscheme shades_of_purple
 "colorscheme industry
 
 " Ubuntu ne possede pas de couleur 24 bits
-if has("termguicolors") && has("unix") && !has("macunix")
+"if has("termguicolors") && has("unix") && !has("macunix")
     set termguicolors
-endif
+"endif
 
 set autoindent	" Indente la prochaine ligne comme la precedente
 set smartindent	" Indente intelligente pour les {}
