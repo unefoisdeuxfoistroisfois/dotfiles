@@ -13,13 +13,14 @@ Ce dépôt contient tous mes fichiers de config pour Git, Vim, etc. afin de gard
 | `.gitignore`      | Fichiers à ignorer dans tous les projets Git |
 | `.gitattributes`  | Règles de détection de langage et comportement GitHub |
 | `.vimrc`          | Configuration Vim (indentation, raccourcis, apparence) |
+| `.vim/`           | Répertoire Vim (plugins, thèmes, scripts, configs additionnelles) |
 
 ---
 
 ## 🚀 Installation rapide
 
-> ℹ️ Tous les fichiers de config sont stockés dans `~/dotfiles`.  
-> On crée ensuite des **liens symboliques** vers ces fichiers pour les rendre actifs dans le système,  
+> ℹ️ Les dotfiles sont stockés dans `~/dotfiles`.
+> > On crée ensuite des **liens symboliques** vers ces fichiers pour les rendre actifs dans le système,  
 > sans avoir à les copier ni dupliquer.  
 > Il est recommandé d’utiliser des **chemins relatifs** pour garder l’installation portable.
 
@@ -31,11 +32,18 @@ git clone https://github.com/unefoisdeuxfoistroisfois/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
 # Créer les liens symboliques vers le home (~), avec chemins relatifs
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/dotfiles/.gitignore ~/.gitignore
-ln -s ~/dotfiles/.gitattributes ~/.gitattributes
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.vim ~/.vim
+
+#### 🔹 Méthode simple (pas à pas)
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/.gitignore ~/.gitignore
+ln -sf ~/dotfiles/.gitattributes ~/.gitattributes
+ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/.vim ~/.vim
+
+#### 🔹 Méthode rapide (tout d’un coup)
+for file in .gitconfig .gitignore .gitattributes .vimrc .vim; do
+    ln -sf ~/dotfiles/$file ~/$file
+done
 
 # Activer le .gitignore global
 git config --global core.excludesfile ~/.gitignore
