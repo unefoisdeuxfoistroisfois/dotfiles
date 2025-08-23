@@ -1,5 +1,9 @@
-background = #000000
-foreground = #ff52df
-font-family = "Menlo Bold"
+# ---- Couleurs de base ----
+background - #000000
+foreground - #ff52df
 
-custom-shader = shaders/cursor_smear.glsl
+# ---- Police -----
+font-family - "Menlo Bold"
+
+# ---- Curseur ----
+custom-shader - shaders/cursor_smear.glsl
