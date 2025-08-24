@@ -1,9 +1,12 @@
-# ---- Couleurs de base ----
-background - #000000
-foreground - #ff52df
+# --- Couleurs de base ----
+#background = #000000
+background = #f36ff7
+
+#foreground = #ffffff
+foreground = #000000
 
 # ---- Police -----
-font-family - "Menlo Bold"
+font-family = "Menlo Bold"
 
 # ---- Curseur ----
-custom-shader - shaders/cursor_smear.glsl
+custom-shader = shaders/cursor_smear.glsl
