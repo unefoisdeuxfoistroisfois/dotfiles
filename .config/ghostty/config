@@ -10,3 +10,4 @@ font-family = "Menlo Bold"
 
 # ---- Curseur ----
 custom-shader = shaders/cursor_smear.glsl
+mouse-hide-while-typing
