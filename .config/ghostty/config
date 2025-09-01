@@ -10,4 +10,12 @@ font-family = "Menlo Bold"
 
 # ---- Curseur ----
 custom-shader = shaders/cursor_smear.glsl
+#custom-shader = shaders/cursor_frozen.glsl
 mouse-hide-while-typing
+
+# Desactivation des ligatures
+font-feature = -calt
+
+# Fond du terminal
+#background-opacity = 0.5
+#background-blur = 20
