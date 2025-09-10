@@ -1,0 +1,10 @@
+# --- THEME ----
+--theme="Monokai Extended Light"
+
+# --- AFFICHAGE ---
+#--style=numbers,changes
+
+# --- TAILLE FICHIER ---
+# il permet de tout affihcer pas 
+# comme de al doc mais comme le vrai cat
+--paging=never

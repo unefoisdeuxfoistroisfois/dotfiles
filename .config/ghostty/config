@@ -7,6 +7,7 @@ foreground = #000000
 
 # ---- Police -----
 font-family = "Menlo Bold"
+#font-family = "Iosevka"
 
 # ---- Curseur ----
 custom-shader = shaders/cursor_smear.glsl
