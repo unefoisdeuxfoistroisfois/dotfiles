@@ -12,4 +12,8 @@ PROMPT="%n %c %% "
 # bat (cat amélioré)
 # sous Ubuntu/WSL -> batcat
 # sous macOS -> bat (donc adapte ici si besoin)
-alias bat="batcat"
+if command -v batcat &> /dev/null; then
+    alias bat="batcat"
+elif command -v bat &> /dev/null; then
+    alias bat="bat"
+fi
