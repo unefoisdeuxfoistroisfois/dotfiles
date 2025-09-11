@@ -5,13 +5,13 @@ USER=bradley
 export USER
 
 # %F{black}%n (USER)
-# %c chemin courant
+# %c (chemin courant)
 # PROMPT="%F{black}%n %f%c %% "
 PROMPT="%n %c %% "
 
 # bat (cat amélioré)
-# sous Ubuntu/WSL -> batcat
-# sous macOS -> bat (donc adapte ici si besoin)
+# Ubuntu -> batcat
+# macOS -> bat
 if command -v batcat &> /dev/null; then
     alias bat="batcat"
 elif command -v bat &> /dev/null; then
