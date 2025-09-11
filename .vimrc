@@ -42,6 +42,7 @@ set visualbell	" Suppression des bruits à la fin du fichier et au debut
 " --- RECHERCHE ---
 set hlsearch	" Surbrillance sur le mot trouvé
 set incsearch	" Recherche en temps réel pendant que tu tapes
+set ignorecase	" Ignore la casse (colors = COLORS && COLORS = colors)
 "set nohlsearch
 nnoremap <leader><CR> :nohlsearch<CR>
 
