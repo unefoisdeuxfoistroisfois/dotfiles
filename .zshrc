@@ -1,9 +1,13 @@
+# Nettoyer le terminal au lancement
+clear
+
 USER=bradley
 export USER
 
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-PROMPT="%F{yellow}%n %f%c $ "
+# %F{black}%n (USER)
+# %c chemin courant
+# PROMPT="%F{black}%n %f%c %% "
+PROMPT="%n %c %% "
 
 # bat (cat amélioré)
 # sous Ubuntu/WSL -> batcat
