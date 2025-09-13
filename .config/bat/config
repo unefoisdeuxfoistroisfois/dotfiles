@@ -6,5 +6,5 @@
 
 # --- TAILLE FICHIER ---
 # il permet de tout affihcer pas 
-# comme de al doc mais comme le vrai cat
+# comme de la doc mais comme le vrai cat
 --paging=never
