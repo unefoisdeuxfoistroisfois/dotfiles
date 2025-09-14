@@ -2,13 +2,19 @@
 # pour ne pas avoir l'heure de connexion
 clear
 
+if [[ "$(uname)" == "Darwin" ]]; then
+    export USER="bradley"
+elif [[ "$(uname)" == "Linux" ]]; then
+    export USER="britela-"
+    export MAIL="britela-@student.s19.be"
+fi
+
 #USER=bradley
 #export USER
 
-USER=britela-
-MAIL=britela-@student.s19.be
-
-export USER MAIL
+#USER=britela-
+#MAIL=britela-@student.s19.be
+#export USER MAIL
 
 # %F{black}%n (USER)
 # %c (chemin courant)
