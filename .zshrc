@@ -23,3 +23,6 @@ if command -v batcat &> /dev/null; then
 elif command -v bat &> /dev/null; then
     alias bat="bat"
 fi
+# Chemin pour bat sur Linux comme j'ai pas les droit sudo j'ai mis dans .local
+# direct pas dans usr/.local
+export PATH="$HOME/.local/bin:$PATH"
