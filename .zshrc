@@ -5,10 +5,10 @@ clear
 #USER=bradley
 #export USER
 
-#USER=britela-
-#MAIL=britela-@student.s19.be
+USER=britela-
+MAIL=britela-@student.s19.be
 
-#export USER MAIL
+export USER MAIL
 
 # %F{black}%n (USER)
 # %c (chemin courant)
