@@ -6,7 +6,7 @@ background = #f36ff7
 foreground = #000000
 
 # ---- Police -----
-font-family = "Menlo Bold"
+#font-family = "Menlo Bold"
 #font-family = "Iosevka"
 
 # ---- Curseur ----

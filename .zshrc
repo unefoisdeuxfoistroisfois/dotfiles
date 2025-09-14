@@ -1,8 +1,14 @@
 # Nettoyer le terminal au lancement
+# pour ne pas avoir l'heure de connexion
 clear
 
-USER=bradley
-export USER
+#USER=bradley
+#export USER
+
+#USER=britela-
+#MAIL=britela-@student.s19.be
+
+#export USER MAIL
 
 # %F{black}%n (USER)
 # %c (chemin courant)
