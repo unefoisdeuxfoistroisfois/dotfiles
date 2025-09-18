@@ -2,6 +2,13 @@
 # pour ne pas avoir l'heure de connexion
 clear
 
+precmd() {
+  if [[ -n "$_precmd_ran" ]]; then
+    echo
+  fi
+  _precmd_ran=1
+}
+
 if [[ "$(uname)" == "Darwin" ]]; then
     export USER="bradley"
 elif [[ "$(uname)" == "Linux" ]]; then
@@ -20,6 +27,7 @@ fi
 # %c (chemin courant)
 # PROMPT="%F{black}%n %f%c %% "
 PROMPT="%n %c %% "
+
 
 # bat (cat amélioré)
 # Ubuntu -> batcat
