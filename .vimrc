@@ -109,3 +109,9 @@ let g:netrw_winsize = 15	" Taille a 15 colonne (:15 Le)
 let g:netrw_banner = 0		" Suppresion de la baniere au dessus
 let g:netrw_liststyle = 3	" Aborescence style 3 + facile pour moi (i)
 let g:netrw_browse_split = 4	" Affiche fichier dans ecran principal
+
+" Dictionnaires pour auto-complétion <C-x><C-k>
+" set dictionary+=~/.vim/dict/c.txt
+autocmd FileType python setlocal dictionary+=~/.vim/dict/python.txt
+autocmd FileType java setlocal dictionary+=~/.vim/dict/java.txt
+autocmd FileType c setlocal dictionary+=~/.vim/dict/c.txt
