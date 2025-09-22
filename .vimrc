@@ -64,11 +64,18 @@ set noswapfile	" Supprime les fichier .swp
 
 " --- COMMENTAIRE ---
 " s/^/"/ VIM
-" s/^/\/\/ C, JAVA
 " \c pour mettre en commentaire apres une selection V et \u pour uncommenter
 " <CR> -> Carriage Return
-vnoremap <leader>c :s/^/\/\//<CR>:nohlsearch<CR>
-vnoremap <leader>u :s/^\/\/<CR>:nohlsearch<CR>
+
+" C et Java -> //
+" s/^/\/\/ C, JAVA
+autocmd FileType c,java vnoremap <buffer> <leader>c :s/^/\/\//<CR>:nohlsearch<CR>
+autocmd FileType c,java vnoremap <buffer> <leader>u :s/^\/\///<CR>:nohlsearch<CR>
+
+" Python -> #
+" s/^/#/ PYTHON
+autocmd FileType python vnoremap <buffer> <leader>c :s/^/#/<CR>:nohlsearch<CR>
+autocmd FileType python vnoremap <buffer> <leader>u :s/^#//<CR>:nohlsearch<CR>
 
 " --- TABULATION ---
 " > -> va vers la droite
