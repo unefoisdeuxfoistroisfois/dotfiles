@@ -122,3 +122,4 @@ let g:netrw_browse_split = 4	" Affiche fichier dans ecran principal
 autocmd FileType python setlocal dictionary+=~/.vim/dict/python.txt
 autocmd FileType java setlocal dictionary+=~/.vim/dict/java.txt
 autocmd FileType c setlocal dictionary+=~/.vim/dict/c.txt
+set tabstop=4

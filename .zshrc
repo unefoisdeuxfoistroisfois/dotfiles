@@ -37,6 +37,18 @@ if command -v batcat &> /dev/null; then
 elif command -v bat &> /dev/null; then
     alias bat="bat"
 fi
+
+if command -v batcat &> /dev/null; then
+    export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+elif command -v bat &> /dev/null; then
+    export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+fi
+export MANROFFOPT="-c"
+
 # Chemin pour bat sur Linux comme j'ai pas les droit sudo j'ai mis dans .local
 # direct pas dans usr/.local
 export PATH="$HOME/.local/bin:$PATH"
+
+alias francinette=/Users/bradley/francinette/tester.sh
+
+alias paco=/Users/bradley/francinette/tester.sh
