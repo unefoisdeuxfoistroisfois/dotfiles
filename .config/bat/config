@@ -1,5 +1,5 @@
 # --- THEME ----
---theme="Monokai Extended Light"
+#--theme="Monokai Extended Light"
 
 # --- AFFICHAGE ---
 #--style=numbers,changes

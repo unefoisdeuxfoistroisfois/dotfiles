@@ -1,9 +1,11 @@
 # --- Couleurs de base ----
-background = #000000
+#background = #000000
+background = #faaff8
+#background = #fcb1fa
 #background = #f36ff7
 
-foreground = #ffffff
-#foreground = #000000
+#foreground = #ffffff
+foreground = #000000
 
 # ---- Police -----
 #font-family = "Menlo Bold"
