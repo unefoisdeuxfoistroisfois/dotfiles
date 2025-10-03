@@ -2,6 +2,7 @@
 # pour ne pas avoir l'heure de connexion
 clear
 
+# Enlève la premiere ligne d'éspace
 precmd() {
   if [[ -n "$_precmd_ran" ]]; then
     echo
@@ -9,6 +10,7 @@ precmd() {
   _precmd_ran=1
 }
 
+# Nom user en fonciton de l'OS
 if [[ "$(uname)" == "Darwin" ]]; then
     export USER="bradley"
 elif [[ "$(uname)" == "Linux" ]]; then
@@ -28,7 +30,6 @@ fi
 # PROMPT="%F{black}%n %f%c %% "
 PROMPT="%n %c %% "
 
-
 # bat (cat amélioré)
 # Ubuntu -> batcat
 # macOS -> bat
@@ -38,6 +39,7 @@ elif command -v bat &> /dev/null; then
     alias bat="bat"
 fi
 
+# Mapping pour que bat fonciont direcement avec le man -> man atoi
 if command -v batcat &> /dev/null; then
     export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 elif command -v bat &> /dev/null; then

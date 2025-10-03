@@ -1,3 +1,4 @@
+# --- macOS ---
 .DS_Store
 
 # --- VIM ---
@@ -8,8 +9,17 @@
 a.out
 *.o
 
-# --- JAVA ---
+# --- Java ---
 *.class
 
 # --- PDF ---
 *.pdf
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- PyCharm / JetBrains ---
+.idea/
