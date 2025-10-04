@@ -85,26 +85,24 @@ autocmd FileType python vnoremap <buffer> <leader>u :s/^#//<CR>:nohlsearch<CR>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-" --- DESACTIVATION DES FLECHE ---
-
+" --- DESACTIVATION DES FLECHES ---
 " MODE NORMAL
-nnoremap <Up>    :echo "UTILISE k"<CR>
-nnoremap <Down>  :echo "UTILISE j"<CR>
-nnoremap <Left>  :echo "UTILISE h"<CR>
-nnoremap <Right> :echo "UTILISE l"<CR>
+nnoremap <Up>    <Nop>
+nnoremap <Down>  <Nop>
+nnoremap <Left>  <Nop>
+nnoremap <Right> <Nop>
 
-" MODE INSERTION esc car en mode insertion vim ne peut pas faire de echo
-" ensuite i pour revenir en mode INSERTION
-inoremap <Up>    <Esc>:echo "UTILISE k"<CR>i
-inoremap <Down>  <Esc>:echo "UTILISE j"<CR>i
-inoremap <Left>  <Esc>:echo "UTILISE h"<CR>i
-inoremap <Right> <Esc>:echo "UTILISE l"<CR>i
+" MODE INSERTION
+inoremap <Up>    <Nop>
+inoremap <Down>  <Nop>
+inoremap <Left>  <Nop>
+inoremap <Right> <Nop>
 
 " MODE VISUEL
-vnoremap <Up>    :<C-u>echo "UTILISE k"<CR>
-vnoremap <Down>  :<C-u>echo "UTILISE j"<CR>
-vnoremap <Left>  :<C-u>echo "UTILISE h"<CR>
-vnoremap <Right> :<C-u>echo "UTILISE l"<CR>
+vnoremap <Up>    <Nop>
+vnoremap <Down>  <Nop>
+vnoremap <Left>  <Nop>
+vnoremap <Right> <Nop>
 
 " --- SAUVEGARDE AUTO ---
 set autowriteall
@@ -122,4 +120,3 @@ let g:netrw_browse_split = 4	" Affiche fichier dans ecran principal
 autocmd FileType python setlocal dictionary+=~/.vim/dict/python.txt
 autocmd FileType java setlocal dictionary+=~/.vim/dict/java.txt
 autocmd FileType c setlocal dictionary+=~/.vim/dict/c.txt
-set tabstop=4
