@@ -2,21 +2,21 @@
 #background = #000000
 #background = #faaff8
 #background = #119bd9
-background = #01238a
 #background = #fcb1fa
 #background = #f36ff7
 
 #foreground = #ffffff
 #foreground = #000000
-foreground = #d47502
+#foreground = #d47502
+foreground = #499cf5
 
 # ---- Police -----
 #font-family = "Menlo Bold"
 #font-family = "Iosevka"
 
 # ---- Curseur ----
-#custom-shader = shaders/cursor_smear.glsl
-custom-shader = shaders/cursor_smear_fade.glsl
+custom-shader = shaders/cursor_smear.glsl
+#custom-shader = shaders/cursor_smear_fade.glsl
 #custom-shader = shaders/manga_slash.glsl
 #custom-shader = shaders/cursor_frozen.glsl
 #custom-shader = shaders/cursor_blaze_no_trail.glsl
