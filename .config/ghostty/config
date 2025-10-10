@@ -1,14 +1,14 @@
 # --- Couleurs de base ----
-#background = #000000
+background = #000000
 #background = #faaff8
 #background = #119bd9
 #background = #fcb1fa
 #background = #f36ff7
 
-#foreground = #ffffff
+foreground = #ffffff
 #foreground = #000000
 #foreground = #d47502
-foreground = #499cf5
+#foreground = #499cf5
 
 # ---- Police -----
 #font-family = "Menlo Bold"
