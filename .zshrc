@@ -30,6 +30,10 @@ fi
 # PROMPT="%F{black}%n %f%c %% "
 PROMPT="%n %c %% "
 
+#PROMPT="%F{214}%n%f %F{33}%c%f %% "
+#PROMPT="%F{cyan}%n%f %F{yellow}%c%f %% "
+PROMPT="%F{213}%n%f %F{141}%c%f %% "
+
 # bat (cat amélioré)
 # Ubuntu -> batcat
 # macOS -> bat
