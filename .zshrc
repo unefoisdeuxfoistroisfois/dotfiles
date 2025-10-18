@@ -18,6 +18,10 @@ elif [[ "$(uname)" == "Linux" ]]; then
     export MAIL="britela-@student.s19.be"
 fi
 
+if [[ "$(uname)" == "Linux" ]]; then
+  bash -c "rm -f ~/.config/BraveSoftware/Brave-Browser/Singleton*" >/dev/null 2>&1
+fi
+
 #USER=bradley
 #export USER
 
