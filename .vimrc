@@ -107,8 +107,38 @@ vnoremap <Right> <Nop>
 " --- SAUVEGARDE AUTO ---
 set autowriteall
 
+
+" --- STARTUP DASHBOARD ---
+function! StartupLogoBuffer()
+  enew
+  setlocal buftype=nofile
+  setlocal bufhidden=wipe
+  setlocal noswapfile
+  setlocal modifiable
+  setlocal nobuflisted
+  setlocal colorcolumn=    " Désactive la colorcolumn dans le dashboard
+  setlocal nonumber
+  setlocal norelativenumber
+
+  let l:logo = readfile(expand('~/.vim/logo/spiderascii.txt'))
+  call setline(1, l:logo)
+
+  " Centrage horizontal
+"  execute 'silent 1,$center ' . &columns
+
+  setlocal nomodifiable
+
+  " Touches du dashboard
+  nnoremap <buffer> s :bd!<CR>:Vexplore<CR>
+  nnoremap <buffer> q :q<CR>
+endfunction
+
+"autocmd VimEnter * call StartupLogoBuffer()
+autocmd VimEnter * if argc() == 0 | call StartupLogoBuffer() | endif
+
 " --- NETRW --- 
-autocmd VimEnter * :Vexplore	" Automatisation pour l'ouvrir a l'ouverture
+"autocmd VimEnter * nested :Vexplore
+"autocmd VimEnter * :Vexplore	" Automatisation pour l'ouvrir a l'ouverture
 
 let g:netrw_winsize = 15	" Taille a 15 colonne (:15 Le)
 let g:netrw_banner = 0		" Suppresion de la baniere au dessus
