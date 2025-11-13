@@ -60,7 +60,8 @@ elseif has('clipboard')	" vim ne connait pas unnamed il connait juste clipboard
 endif
 
 " --- FICHIER ---
-set noswapfile	" Supprime les fichier .swp
+set noswapfile			" Supprime les fichier .swp
+set fileformats=unix,dos	" WSL copier/coller (^M)
 
 " --- COMMENTAIRE ---
 " s/^/"/ VIM
@@ -106,7 +107,6 @@ vnoremap <Right> <Nop>
 
 " --- SAUVEGARDE AUTO ---
 set autowriteall
-
 
 " --- STARTUP DASHBOARD ---
 function! StartupLogoBuffer()
