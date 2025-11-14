@@ -25,7 +25,7 @@ custom-shader = shaders/cursor_smear.glsl
 mouse-hide-while-typing
 
 # Desactivation des ligatures
-font-feature = -calt
+#font-feature = -calt
 
 # Fond du terminal
 #background-opacity = 0.5
