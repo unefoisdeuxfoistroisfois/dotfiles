@@ -58,7 +58,3 @@ export MANROFFOPT="-c"
 # Chemin pour bat sur Linux comme j'ai pas les droit sudo j'ai mis dans .local
 # direct pas dans usr/.local
 export PATH="$HOME/.local/bin:$PATH"
-
-alias francinette=/Users/bradley/francinette/tester.sh
-
-alias paco=/Users/bradley/francinette/tester.sh
