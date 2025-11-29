@@ -4,6 +4,7 @@
 # --- VIM ---
 *.swp
 *.swo
+.vim/.netrwhist
 
 # --- C ---
 a.out
