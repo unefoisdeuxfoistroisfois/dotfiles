@@ -22,6 +22,18 @@ if [[ "$(uname)" == "Linux" ]]; then
   bash -c "rm -f ~/.config/BraveSoftware/Brave-Browser/Singleton*" >/dev/null 2>&1
 fi
 
+setopt PROMPT_SUBST
+
+# Fonction qui récupère la branche Git
+git_branch() {
+  branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+  if [ -n "$branch" ]; then
+    echo "%F{214}($branch)%f"
+  fi
+}
+
+PROMPT="%F{213}%n%f %F{141}%c%f \$(git_branch) %% "
+
 #USER=bradley
 #export USER
 
@@ -32,11 +44,11 @@ fi
 # %F{black}%n (USER)
 # %c (chemin courant)
 # PROMPT="%F{black}%n %f%c %% "
-PROMPT="%n %c %% "
+#PROMPT="%n %c %% "
 
 #PROMPT="%F{214}%n%f %F{33}%c%f %% "
 #PROMPT="%F{cyan}%n%f %F{yellow}%c%f %% "
-PROMPT="%F{213}%n%f %F{141}%c%f %% "
+#PROMPT="%F{213}%n%f %F{141}%c%f %% "
 
 # bat (cat amélioré)
 # Ubuntu -> batcat
