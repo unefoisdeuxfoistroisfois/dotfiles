@@ -15,7 +15,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     export USER="bradley"
 elif [[ "$(uname)" == "Linux" ]]; then
     export USER="britela-"
-    export MAIL="britela-@student.s19.be"
+    export MAIL="britela-@student.42belgium.be"
 fi
 
 if [[ "$(uname)" == "Linux" ]]; then

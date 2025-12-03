@@ -1,6 +1,6 @@
 " --- 42 HEADER ---
 let g:user42 = 'britela-'
-let g:mail42 = 'britela-@student.s19.be'
+let g:mail42 = 'britela-@student.42belgium.be'
 
 " --- APPARENCE ---
 syntax on
