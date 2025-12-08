@@ -85,6 +85,9 @@ autocmd FileType python vnoremap <buffer> <leader>u :s/^#//<CR>:nohlsearch<CR>
 " S-Tab shift + tab 
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
+"--- VIM PURE ---
+" Controle V, I et TAB
+" V + > / <
 
 " --- DESACTIVATION DES FLECHES ---
 " MODE NORMAL
