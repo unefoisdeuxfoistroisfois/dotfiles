@@ -6,7 +6,14 @@ NC='\033[0m'
 
 echo -e "${GREEN}CRÉATION DE LIEN SYMBO${NC}"
 
-rm -rf ~/.vim ~/.config
+# Suppression des anciens
+rm -rf ~/.gitconfig
+rm -rf ~/.gitignore
+rm -rf ~/.gitattributes
+rm -rf ~/.vimrc
+rm -rf ~/.vim
+rm -rf ~/.zshrc
+rm -rf ~/.config
 
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore ~/.gitignore
