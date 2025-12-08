@@ -1,0 +1,111 @@
+================================================================================
+                    CONFIGURATION VS CODE AVEC DOTFILES
+================================================================================
+
+STRUCTURE
+---------
+~/dotfiles/
+  vscode/
+    settings.json      # Configuration VS Code
+    extensions.txt     # Liste des extensions
+  setup.sh            # Script d'installation
+
+
+================================================================================
+INITIALISATION (à faire une seule fois sur chaque machine)
+================================================================================
+
+1. Copier la config actuelle dans dotfiles
+-------------------------------------------
+macOS :
+  cp ~/Library/Application\ Support/Code/User/settings.json ~/dotfiles/vscode/
+  code --list-extensions > ~/dotfiles/vscode/extensions.txt
+
+Linux :
+  cp ~/.config/Code/User/settings.json ~/dotfiles/vscode/
+  code --list-extensions > ~/dotfiles/vscode/extensions.txt
+
+
+2. Créer le lien symbolique
+----------------------------
+macOS :
+  # Supprimer l'original
+  rm ~/Library/Application\ Support/Code/User/settings.json
+  
+  # Créer le symlink (le fichier dans dotfiles devient le maître)
+  ln -sf ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+
+Linux :
+  # Supprimer l'original
+  rm ~/.config/Code/User/settings.json
+  
+  # Créer le symlink
+  ln -sf ~/dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
+
+RÉSULTAT : Toutes les modifications faites dans VS Code modifient 
+directement ~/dotfiles/vscode/settings.json
+
+
+================================================================================
+AJOUTER UNE NOUVELLE EXTENSION
+================================================================================
+
+1. Installer l'extension dans VS Code (via l'interface)
+
+2. Mettre à jour extensions.txt
+   code --list-extensions > ~/dotfiles/vscode/extensions.txt
+
+3. Commit et push
+   cd ~/dotfiles
+   git add vscode/extensions.txt
+   git commit -m "Add new extension"
+   git push
+
+
+================================================================================
+SYNCHRONISER SUR UNE AUTRE MACHINE
+================================================================================
+
+1. Récupérer les changements
+   cd ~/dotfiles
+   git pull
+
+2. Installer les nouvelles extensions
+   cat ~/dotfiles/vscode/extensions.txt | xargs -L 1 code --install-extension
+
+
+================================================================================
+INSTALLATION SUR UNE NOUVELLE MACHINE
+================================================================================
+
+1. Cloner le repo
+   git clone <ton-repo> ~/dotfiles
+
+2. Lancer le script d'installation
+   cd ~/dotfiles
+   chmod +x setup.sh
+   ./setup.sh
+
+Le script fait automatiquement :
+- Crée les liens symboliques pour tous les dotfiles
+- Crée le lien symbolique pour settings.json (selon l'OS)
+- Installe toutes les extensions listées dans extensions.txt
+
+
+================================================================================
+NOTES IMPORTANTES
+================================================================================
+
+SETTINGS :
+  - Synchronisation automatique grâce au lien symbolique
+  - Modifier dans VS Code → modifie directement ~/dotfiles/vscode/settings.json
+  - Juste faire git push/git pull
+
+EXTENSIONS :
+  - Mise à jour manuelle avec : code --list-extensions > ~/dotfiles/vscode/extensions.txt
+  - Penser à faire cette commande après chaque installation d'extension
+  - Sur l'autre machine : git pull puis réinstaller les extensions
+
+SETUP.SH :
+  - À lancer UNE SEULE FOIS par machine lors de la première installation
+  - Pas besoin de le relancer après
