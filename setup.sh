@@ -40,6 +40,7 @@ else
     VSCODE_USER_DIR="$HOME/.config/Code/User"
 fi
 
+# Crée le dossier si il existe pas
 mkdir -p "$VSCODE_USER_DIR"
 ln -sf ~/dotfiles/vscode/settings.json "$VSCODE_USER_DIR/settings.json"
 
