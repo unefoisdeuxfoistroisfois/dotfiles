@@ -28,4 +28,24 @@ ln -sf ~/dotfiles/.config ~/.config
 #    ln -sf ~/dotfiles/$file ~/$file
 #done
 
+# --- VS CODE ---
+echo -e "${GREEN}Configuration VS Code${NC}"
+
+# Détection de l'OS
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # macOS
+    VSCODE_USER_DIR="$HOME/Library/Application Support/Code/User"
+else
+    # Linux
+    VSCODE_USER_DIR="$HOME/.config/Code/User"
+fi
+
+mkdir -p "$VSCODE_USER_DIR"
+ln -sf ~/dotfiles/vscode/settings.json "$VSCODE_USER_DIR/settings.json"
+
+if [ -f ~/dotfiles/vscode/extensions.txt ]; then
+    echo "Installation des extensions VS Code..."
+    cat ~/dotfiles/vscode/extensions.txt | xargs -L 1 code --install-extension
+fi
+
 echo -e "${BLUE}INSTALLATION TERMINÉE${NC}"
