@@ -41,4 +41,4 @@ Le script créera automatiquement tous les liens symboliques nécessaires.
 
 - Les dotfiles utilisent des liens symboliques pour rester synchronisés avec le dépôt Git
 - Modifications dans `~/.vimrc` = modifications automatiques dans `~/dotfiles/.vimrc`
-- Permet de garder la même config entre PC personnel et école 42
+- Permet de garder la même config entre PC personnel et 19
