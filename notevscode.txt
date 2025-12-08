@@ -83,7 +83,7 @@ INSTALLATION SUR UNE NOUVELLE MACHINE
 
 2. Lancer le script d'installation
    cd ~/dotfiles
-   chmod +x setup.sh
+   chmod 777 setup.sh
    ./setup.sh
 
 Le script fait automatiquement :
