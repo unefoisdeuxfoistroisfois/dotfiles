@@ -1,4 +1,5 @@
 ahmadawais.shades-of-purple
 kube.42header
 ms-vscode.cpptools
+pkief.material-icon-theme
 vscodevim.vim
