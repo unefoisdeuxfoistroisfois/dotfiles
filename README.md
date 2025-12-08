@@ -29,7 +29,7 @@ git clone https://github.com/unefoisdeuxfoistroisfois/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
 # Lancer le script d'installation
-chmod +x setup.sh
+chmod 777 setup.sh
 ./setup.sh
 ```
 
