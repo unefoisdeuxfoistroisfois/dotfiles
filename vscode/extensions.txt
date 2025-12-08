@@ -1,0 +1,4 @@
+ahmadawais.shades-of-purple
+kube.42header
+ms-vscode.cpptools
+vscodevim.vim

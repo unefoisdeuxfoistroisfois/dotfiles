@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Shades of Purple",
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "window.commandCenter": false,
+    "chat.commandCenter.enabled": false,
+    "workbench.layoutControl.enabled": false,
+
+    /* -----VIM-----*/
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,   // Surbrillance sur le mot trouvé
+    "vim.incsearch": true,  // Recherche en temps réel pendant que tu tapes
+    "vim.ignorecase": true,
+    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "42header.email": "britela-@student.42belgium.be",
+    "42header.username": "britela-" // Ignore la casse (colors = COLORS && COLORS = colors)
+}
