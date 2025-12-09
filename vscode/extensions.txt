@@ -1,5 +1,9 @@
 ahmadawais.shades-of-purple
 kube.42header
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
+ms-python.vscode-python-envs
 ms-vscode.cpptools
 pkief.material-icon-theme
 vscodevim.vim
