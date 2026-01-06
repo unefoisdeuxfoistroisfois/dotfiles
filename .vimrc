@@ -132,21 +132,21 @@ function! StartupLogoBuffer()
   setlocal nomodifiable
 
   " Touches du dashboard
-  nnoremap <buffer> s :bd!<CR>:Vexplore<CR>
+  nnoremap <buffer> s :bd!<CR>
   nnoremap <buffer> q :q<CR>
 endfunction
 
-"autocmd VimEnter * call StartupLogoBuffer()
-autocmd VimEnter * if argc() == 0 | call StartupLogoBuffer() | endif
+autocmd VimEnter * call StartupLogoBuffer()
+"autocmd VimEnter * if argc() == 0 | call StartupLogoBuffer() | endif
 
 " --- NETRW --- 
 "autocmd VimEnter * nested :Vexplore
 "autocmd VimEnter * :Vexplore	" Automatisation pour l'ouvrir a l'ouverture
 
-let g:netrw_winsize = 15	" Taille a 15 colonne (:15 Le)
+"let g:netrw_winsize = 15	" Taille a 15 colonne (:15 Le)
 let g:netrw_banner = 0		" Suppresion de la baniere au dessus
 let g:netrw_liststyle = 3	" Aborescence style 3 + facile pour moi (i)
-let g:netrw_browse_split = 4	" Affiche fichier dans ecran principal
+"let g:netrw_browse_split = 4	" Affiche fichier dans ecran principal
 
 " Dictionnaires pour auto-complétion <C-x><C-k>
 " set dictionary+=~/.vim/dict/c.txt
