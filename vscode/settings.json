@@ -11,7 +11,8 @@
     "vim.hlsearch": true,   // Surbrillance sur le mot trouvé
     "vim.incsearch": true,  // Recherche en temps réel pendant que tu tapes
     "vim.ignorecase": true,
-    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
     "42header.email": "britela-@student.42belgium.be",
-    "42header.username": "britela-" // Ignore la casse (colors = COLORS && COLORS = colors)
+    "42header.username": "britela-",
+    "workbench.startupEditor": "none" // Ignore la casse (colors = COLORS && COLORS = colors)
 }
