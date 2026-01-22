@@ -5,6 +5,11 @@ return {
       "pyright",
       "clangd",
       "jdtls",
+      "sqls",
+      "html-lsp",
+      "css-lsp",
+      "typescript-language-server",
+      "intelephense",
     },
   },
 }
