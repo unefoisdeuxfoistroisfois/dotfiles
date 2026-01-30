@@ -11,8 +11,14 @@ foreground = #ffffff
 #foreground = #499cf5
 
 # ---- Police -----
-#font-family = "Menlo Bold"
-#font-family = "Iosevka"
+#font-family = Andale Mono
+#font-family = Courier New
+#font-family = Lantinghei TC
+#font-family = Menlo
+#font-family = Monaco
+#font-family = Osaka-Mono
+#font-family = PCMyungjo
+#font-family = PT Mono
 
 # ---- Curseur ----
 custom-shader = shaders/cursor_smear.glsl
