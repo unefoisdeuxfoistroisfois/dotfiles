@@ -28,11 +28,13 @@ setopt PROMPT_SUBST
 git_branch() {
   branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
   if [ -n "$branch" ]; then
-    echo "%F{214}($branch)%f"
+    echo "%F{8}($branch)%f"
   fi
 }
 
-PROMPT="%F{213}%n%f %F{141}%c%f \$(git_branch) %% "
+PROMPT="%F{208}%n%f %F{32}%c%f \$(git_branch) %% "
+
+# COULEUR : https://robotmoon.com/256-colors/
 
 #USER=bradley
 #export USER
