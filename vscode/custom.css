@@ -1,0 +1,16 @@
+.monaco-workbench,
+.sidebar,
+.activitybar,
+.titlebar,
+.tabs,
+.panel,
+.statusbar,
+.settings-body,
+.extension-editor,
+.monaco-menu,
+.terminal,
+.debug-pane,
+.monaco-inputbox,
+.chat-view {
+    font-family: "Iosevka Term", monospace !important;
+}
