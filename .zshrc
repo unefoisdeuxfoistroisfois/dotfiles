@@ -18,6 +18,7 @@ elif [[ "$(uname)" == "Linux" ]]; then
     export MAIL="britela-@student.42belgium.be"
 fi
 
+# Suppresion du Singleton pour lancé Brave a 42
 if [[ "$(uname)" == "Linux" ]]; then
   bash -c "rm -f ~/.config/BraveSoftware/Brave-Browser/Singleton*" >/dev/null 2>&1
 fi
