@@ -1,23 +1,27 @@
 {
-    "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false,
-    "window.commandCenter": false,
-    "chat.commandCenter.enabled": false,
-    "workbench.layoutControl.enabled": false,
+    /* ----- VS CODE-----*/
+    "workbench.colorTheme": "Shades of Purple", // Thème
+    "editor.lineNumbers": "relative",          // Numéros de ligne relatifs
+    "editor.minimap.enabled": false,           // Désactive la minimap à droite
+    "window.commandCenter": false,             // Masque la barre de recherche centrale en haut
+    "chat.commandCenter.enabled": false,       // Masque le bouton Copilot dans la barre de titre
+    "workbench.layoutControl.enabled": false,  // Masque les boutons de layout en haut à droite
+    "workbench.secondarySideBar.defaultVisibility": "hidden", // Cache la sidebar secondaire (droite)
+    "workbench.startupEditor": "none",         // Pas d'onglet de bienvenue au démarrage
 
     /* -----VIM-----*/
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,   // Surbrillance sur le mot trouvé
-    "vim.incsearch": true,  // Recherche en temps réel pendant que tu tapes
-    "vim.ignorecase": true,
-    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "vim.useSystemClipboard": true,            // Utilise le presse-papier système
+    "vim.hlsearch": true,                      // Surbrillance sur le mot trouvé
+    "vim.incsearch": true,                     // Recherche en temps réel pendant que tu tapes
+    "vim.ignorecase": true,                    // Ignore la casse (colors = COLORS)
+
+    /* -----42 HEADER-----*/
     "42header.email": "britela-@student.42belgium.be",
     "42header.username": "britela-",
-    "workbench.startupEditor": "none", // Ignore la casse (colors = COLORS && COLORS = colors)
 
     /* -----FONTS-----*/
     "editor.fontFamily": "Iosevka Term",
-    "editor.fontLigatures": true,
+    "editor.fontLigatures": true,              // Active les ligatures (=> devient ⇒, etc.)
     "editor.fontSize": 14,
     "terminal.integrated.fontFamily": "Iosevka Term",
     "debug.console.fontFamily": "Iosevka Term",
@@ -27,5 +31,5 @@
     /* -----CUSTOM CSS-----*/
     "vscode_custom_css.imports": [
         "file:///Users/bradley/dotfiles/vscode/custom.css"
-    ]
+    ],
 }
