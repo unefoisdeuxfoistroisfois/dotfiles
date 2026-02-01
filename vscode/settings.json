@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Shades of Purple",
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "window.commandCenter": false,
@@ -14,5 +13,19 @@
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "42header.email": "britela-@student.42belgium.be",
     "42header.username": "britela-",
-    "workbench.startupEditor": "none" // Ignore la casse (colors = COLORS && COLORS = colors)
+    "workbench.startupEditor": "none", // Ignore la casse (colors = COLORS && COLORS = colors)
+
+    /* -----FONTS-----*/
+    "editor.fontFamily": "Iosevka Term",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontFamily": "Iosevka Term",
+    "debug.console.fontFamily": "Iosevka Term",
+    "scm.inputFontFamily": "Iosevka Term",
+    "markdown.preview.fontFamily": "Iosevka Term",
+
+    /* -----CUSTOM CSS-----*/
+    "vscode_custom_css.imports": [
+        "file:///Users/bradley/dotfiles/vscode/custom.css"
+    ]
 }
