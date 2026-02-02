@@ -30,6 +30,6 @@
     "vscode_custom_css.imports": [
         "file:///Users/bradley/dotfiles/vscode/custom.css"
     ],
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "Shades of Purple (Super Dark)",
     "workbench.iconTheme": "material-icon-theme",
 }
