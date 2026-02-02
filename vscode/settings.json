@@ -1,7 +1,5 @@
 {
-    /* ----- VS CODE-----*/
-    "workbench.colorTheme": "Shades of Purple", // Thème
-    "editor.lineNumbers": "relative",          // Numéros de ligne relatifs
+    "editor.lineNumbers": "relative", // Numéros de ligne relatifs
     "editor.minimap.enabled": false,           // Désactive la minimap à droite
     "window.commandCenter": false,             // Masque la barre de recherche centrale en haut
     "chat.commandCenter.enabled": false,       // Masque le bouton Copilot dans la barre de titre
@@ -32,4 +30,6 @@
     "vscode_custom_css.imports": [
         "file:///Users/bradley/dotfiles/vscode/custom.css"
     ],
+    "workbench.colorTheme": "Shades of Purple",
+    "workbench.iconTheme": "material-icon-theme",
 }
