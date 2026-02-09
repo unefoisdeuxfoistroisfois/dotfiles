@@ -10,7 +10,7 @@
 --    },
 --  },
 --}
---
+
 return {
     {
         'maxmx03/fluoromachine.nvim',
@@ -21,7 +21,7 @@ return {
 
          fm.setup {
             glow = true,
-            theme = 'fluoromachine',  -- Options: 'fluoromachine', 'retrowave', 'delta'
+            theme = 'retrowave',  -- Options: 'fluoromachine', 'retrowave', 'delta'
             transparent = false,
          }
 
