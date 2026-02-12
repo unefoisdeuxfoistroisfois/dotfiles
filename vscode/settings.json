@@ -30,12 +30,15 @@
     "vscode_custom_css.imports": [
         "file:///Users/bradley/dotfiles/vscode/custom.css"
     ],
-    "workbench.colorTheme": "Shades of Purple",
     "workbench.iconTheme": "material-icon-theme",
     "git.confirmSync": false,
 
+    /* -----JAVA-----*/
     "java.project.referencedLibraries": [
-        "resources/*.jar"
+      "resources/lombok*.jar",
+      "resources/slf4j*.jar"
     ]
+
+    "workbench.colorTheme": "Shades of Purple (Super Dark)"
 
 }
