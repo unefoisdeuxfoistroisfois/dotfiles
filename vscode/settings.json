@@ -35,10 +35,23 @@
 
     /* -----JAVA-----*/
     "java.project.referencedLibraries": [
-      "resources/lombok*.jar",
-      "resources/slf4j*.jar"
-    ]
+        "ressources/lombok*.jar",
+        "ressources/slf4j*.jar",
+        "ressources/jaybird*.jar",
+        "ressources/mybatis*.jar",
+        "/Users/bradley/javafx-sdk-25.0.2/lib/*.jar"
+    ],
 
-    "workbench.colorTheme": "Shades of Purple (Super Dark)"
+    "java.configuration.runtimeArgs": [
+        "--module-path", "/Users/bradley/javafx-sdk-25.0.2/lib",
+        "--add-modules", "javafx.controls,javafx.fxml,javafx.graphics"
+    ],
+
+    "workbench.colorTheme": "Shades of Purple (Super Dark)",
+    "update.mode": "manual",
+    "claudeCode.preferredLocation": "panel",
+    "[c]": {
+        "editor.defaultFormatter": "keyhr.42-c-format"
+    }
 
 }
