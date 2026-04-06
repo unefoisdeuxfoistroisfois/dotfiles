@@ -77,3 +77,4 @@ export MANROFFOPT="-c"
 # Chemin pour bat sur Linux comme j'ai pas les droit sudo j'ai mis dans .local
 # direct pas dans usr/.local
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/Library/Frameworks/Firebird.framework/Resources/bin:$PATH"
