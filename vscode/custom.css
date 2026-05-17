@@ -12,5 +12,10 @@
 .debug-pane,
 .monaco-inputbox,
 .chat-view {
+    font-family: "Iosevka", monospace !important;
+}
+
+/* Terminal intégré uniquement */
+.terminal {
     font-family: "Iosevka Term", monospace !important;
 }
