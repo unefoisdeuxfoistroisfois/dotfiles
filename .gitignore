@@ -24,3 +24,20 @@ __pycache__/
 
 # --- PyCharm / JetBrains ---
 .idea/
+
+# --- Linux/GNOME specific --- 
+.config/.gsd-keyboard.settings-ported
+.config/BraveSoftware/
+.config/Code/
+.config/background
+.config/dconf/
+.config/discord/
+.config/evolution/
+.config/gnome-initial-setup-done
+.config/gtk-3.0/
+.config/ibus/
+.config/mimeapps.list
+.config/pulse/
+.config/tiling-assistant/
+.config/user-dirs.dirs
+.config/user-dirs.locale
