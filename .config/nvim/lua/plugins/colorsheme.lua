@@ -17,21 +17,3 @@ return {
         end
     }
 }
-
--- shades_of_purple
---return {
---  -- Installer Shades of Purple depuis GitHub
---  {
---    "Rigellute/shades-of-purple.vim",
---    lazy = false,
---    priority = 1000,
---  },
---
----- Activer le thème
---  {
---    "LazyVim/LazyVim",
---    opts = {
---      colorscheme = "shades_of_purple",
---    },
---  },
---}
