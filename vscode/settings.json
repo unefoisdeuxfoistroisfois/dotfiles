@@ -52,6 +52,7 @@
     "claudeCode.preferredLocation": "panel",
     "[c]": {
         "editor.defaultFormatter": "keyhr.42-c-format"
-    }
+    },
+    "workbench.sideBar.location": "right"
 
 }
