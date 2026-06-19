@@ -39,6 +39,10 @@ set showmatch	" Apres avoir taper ) il va clingté à la ( qui précède
 set matchtime=10	" Temps de clignotememnt (1 seconde)
 set visualbell	" Suppression des bruits à la fin du fichier et au debut
 
+set tabstop=2 " Affiche les tabs sur 2 espaces visuellement
+set shiftwidth=2 " Indentation de 2 avec >> / << et auto-indent
+set noexpandtab " Insère de vrais \t et non des espaces quand on appuie sur Tab
+
 " --- RECHERCHE ---
 set hlsearch	" Surbrillance sur le mot trouvé
 set incsearch	" Recherche en temps réel pendant que tu tapes
