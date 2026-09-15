@@ -41,3 +41,5 @@ __pycache__/
 .config/tiling-assistant/
 .config/user-dirs.dirs
 .config/user-dirs.locale
+
+.config/composer
