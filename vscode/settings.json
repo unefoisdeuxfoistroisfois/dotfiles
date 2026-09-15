@@ -12,6 +12,22 @@
     "vim.hlsearch": true,                      // Surbrillance sur le mot trouvé
     "vim.incsearch": true,                     // Recherche en temps réel pendant que tu tapes
     "vim.ignorecase": true,                    // Ignore la casse (colors = COLORS)
+    "vim.commandLineModeKeyBindingsNonRecursive": [
+      {
+        "before": [":", "w"],
+        "commands": ["workbench.action.files.save"]
+      },
+      {
+        "before": [":", "w", "a"],
+        "commands": ["workbench.action.files.saveAll"]
+      }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "<CR>"],
+        "commands": [":nohl"]
+      }
+    ],
 
     /* -----42 HEADER-----*/
     "42header.email": "britela-@student.42belgium.be",
@@ -30,7 +46,6 @@
     "vscode_custom_css.imports": [
         "file:///Users/bradley/dotfiles/vscode/custom.css"
     ],
-    "workbench.iconTheme": "material-icon-theme",
     "git.confirmSync": false,
 
     /* -----JAVA-----*/
@@ -46,13 +61,10 @@
         "--module-path", "/Users/bradley/javafx-sdk-25.0.2/lib",
         "--add-modules", "javafx.controls,javafx.fxml,javafx.graphics"
     ],
-
-    "workbench.colorTheme": "Shades of Purple (Super Dark)",
     "update.mode": "manual",
-    "claudeCode.preferredLocation": "panel",
-    "[c]": {
-        "editor.defaultFormatter": "keyhr.42-c-format"
-    },
-    "workbench.sideBar.location": "right"
-
+    "workbench.sideBar.location": "right",
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Shades of Purple"
 }
