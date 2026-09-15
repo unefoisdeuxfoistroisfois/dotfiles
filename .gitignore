@@ -43,3 +43,5 @@ __pycache__/
 .config/user-dirs.locale
 
 .config/composer
+psysh
+git
